@@ -1,18 +1,99 @@
+/* reset */
 * {
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
 }
 
+/*normal line length is 30 * em*/
 
 body {
 	background-color: #32a2a8;
+	font-size: 16px; /*1em = 16px*/
+	padding: 20px;
+	font-family: Helvetica, Arial, Sans-serif
+	line-height: 1.5em;
 }
-h1, h2, h3, h4, p, ul
- {
+
+header {
+	padding: 0 200px;
+}
+ 
+
+nav	{
+	margin:auto;
+}
+
+main {
+	padding: 20px
+}
+
+section	{padding: 50px 0;
+}
+
+footer {
+	background-color: gray;
+	font color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+
+h1 {
+	color:black
+	font-family: Helvetica, Arial, Sans-serif
+	font-size: 3.75em;
+	margin: 200px; 0 0
+	;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2.25em;
+}
+
+h4 {
+	font-size: 1.5em;
+	left text-align: 
+}
+
+a {
 	color: black;
-	font-family: Helvetica
+	text-decoration: none;
 }
+
+img a {
+	width: 100%
+	;
+}
+
+
+
+ul, ol {
+	padding: 20px
+}
+
+
+
+p {
+	font-size: 16px
+
+}
+
+h2, h3, h4, p, ul {
+	margin-bottom: 20px;
+	color: black;
+	font-family: Helvetica, Arial, Sans-serif
+}
+
+aside {
+	float: right;
+}
+
+{nav a}
 
 ul.a {
   list-style-type: circle;
