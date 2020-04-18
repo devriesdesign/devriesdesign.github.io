@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,100i,200,200i,300,300i&display=swap');
+
+/* reset */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+/*normal line length is 30 * em*/
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	/*background-color: #ee7b6d; /* turquoise for reference #32a2a8*?
+	font-size: 16px; /*1em = 16px*/
+	font-weight: 200;
+	position: relative;
+}
+
+header {
+	background-color: #FFED74;
+	/*background-color: #b08572;*/
+	border: 1px black solid;
+	padding: 20px;
+}
+
+nav {
+	background-color: #E8C66A;
+	/*background-color: #caba98;*/
+	border: 1px black solid;
+	padding: 20px;
+	text-align: center;
+}
+
+
+nav a: hover {
+	color: #ffffff;
+	display: block;
+	padding: 10px 0;
+}
+
+aside {
+	background-color: #FFC675;
+	/*background-color: #fba902;*/
+	border: 1px black solid;
+	padding: 20px;
+}
+
+article {
+	background-color: #E89C6C;
+	/*background-color: #a7a13f;*/
+	border: 1px black solid;
+	padding: 20px;
+}
+
+footer {
+	background-color: #FF957E;
+	/*background-color: #32a2a8;*/
+	border: 1px black solid;
+	padding: 20px;
+}
+
+div, section {
+	background-color: #FFE2B8;
+	/*background-color: #ee7b6d;*/
+	border: 1px black solid;
+	padding: 20px;
+}
+
+/*#lander{
+	background: url(../images/sl-carne.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:750px;
+	padding: 0;
+	margin-top: 20px;
+} */
+
+#two_column {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+#left {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 30%;
+}
+
+#right {
+	background-color: #E55B88;
+	border: 1 px black solid;
+	padding: 20px;	
+	float: right;
+	width: 62%;
+}
+
+#five_column_row1 {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+#five_column_row2 {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+#team {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 16%;
+}
+
+.clearfix:after{
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
