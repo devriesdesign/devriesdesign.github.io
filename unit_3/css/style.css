@@ -24,13 +24,45 @@ header {
 
 nav{
 	margin:auto;
+	text-align: center;
 }
 
-#slogan{
-	font: 'Work Sans Thin', sans-serif;
-	font-size: 2em;
-	text-align: center;
-	padding-bottom: 40px;
+nav a {
+	color: #ffffff;
+	display: block;
+	width: 180px;
+	float: left;
+	padding: 10px 0;
+}
+
+nav a:hover {
+	background-color: #dd0000;
+}
+
+#wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+aside {
+	padding-top: 20px;
+	float: right;
+	width: 320px;
+}
+
+article {
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+
+	height: 0;
+	font-size: 0;
+	visibility; hidden;
 }
 
 #lander{
@@ -85,8 +117,9 @@ img a {
 	padding: 0;
 }
 
-main{
-	padding: 50px 0;
+main {
+	width: 720px;
+	float: left;
 }
 
 section{
@@ -103,6 +136,7 @@ ul, ol {
 }
 
 footer {
+	clear: both;
 	background-color: gray;
 	font: 'Work Sans Light', sans-serif;
 	font color: white;
@@ -168,9 +202,4 @@ p {
 	margin: 0 0 20px 128px;
 	width: 500px;
 }
-
-.aside {
-object-position: top; left: 
-}
-
 
