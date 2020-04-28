@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/*normal line length is 30 * em*/
+
+body {
+	font-family: 'Gothic A1', sans-serif;
+	background-color: #ee7b6d; /* turquoise for reference #32a2a8**/
+	font-size: 13px;
+	line-height: 19px; 
+	position: relative;
+	color: black;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 2em;
+  font-weight: 100;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-left: 50px;
+  font-weight: 100;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 5px;
+	line-height: 1em;
+  font-weight: 100;
+
+}
+
+h4 {
+	font-size: 1.5em;
+	text-align: center;
+	padding-bottom: 40px;
+  font-weight: 100;
+
+}
+
+
+p {
+	font-size:13px;
+	line-height: 24px;
+	width: 450px;
+	margin-left: 50px;
+}
+
+
+footer {
+	padding: 20px;
+}
+
+#lgtxt {
+    font-size: 140%;
+    line-height: 130%;
+}
+
+.wrapper {
+	width: 900;
+}
+
+.absolute {
+  top: 80%;
+  right: 0;
+  width: 200px;
+}
+
+.relative {
+  position: relative;
+} 
+
+.boxheader {
+    margin-bottom: 60px !important;
+    border: solid 1.5px #000;
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+#half1 {
+	padding: 20px;
+	float: left;
+	width: 40%;
+}
+
+#half2 {
+	padding: 20px;
+	float: right;
+	width: 55%;
+}
+
+#five_column {
+	padding: 20px;
+}
+
+.team {
+	padding: 20px;
+	float: left;
+	width: 16%;
+  margin: 0 
+}
+
+.clearfix:after{
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.slidewrapper {
+  max-height: 323px;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  padding: 0px;
+  overflow: visible;
+}
+
+.mySlides {
+  display:none;
+}
+
+
+/* NEW NAV css only*/
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #333;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: #c00;
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  display: none;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: visible;
+  transition: left 0.3s ease,
+              box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: #1a1a1a;
+}
+
+.main-menu a {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+*/
+.main-menu:target,
+.main-menu[aria-expanded="true"] {
+  display: block;
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+  position: absolute;
+  display: block;  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop{
+    position: fixed;
+  }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media (min-width: 768px) {
+  .menu-toggle,
+  .main-menu .menu-close {
+    display: none;
+  }
+  
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+    display: block;
+  }
+  
+  .main-menu ul {
+    display: flex;
+    
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  
+  .main-menu a {
+    color: #06c;
+    border: 0 !important; /* Remove borders from off-canvas styling */
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: none; /* Remove background from off-canvas styling */
+    color: #c00;
+  }
+}
+
+/*
+ Demo purposes only*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+}
+
+article {
+  padding: 30px;
+  width: 55em;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+article h2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.logo {
+  margin: 0 30px 0 10px;
+}
+
+
+
+@media only screen and (min-width: 768px)
