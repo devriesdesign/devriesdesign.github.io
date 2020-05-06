@@ -44,7 +44,7 @@ h2 {
 h3 {
 	font-family: 'Gothic A1', sans-serif;
 	font-weight: 100;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 5px;
 	line-height: 1em;
 }
@@ -296,8 +296,13 @@ footer {
 .team {
 	padding: 20px;
 	float: left;
-	width: 16%;
+	width: 20%;
 }
+
+team p
+
+width: initial
+margin 0
 
 .clearfix:after{
 	visibility: hidden;
